@@ -1,0 +1,22 @@
+.sidebar-container {
+  height: 100%;
+  width: 20rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: lightblue;
+  box-shadow: 5px 5px 8px 5px #888888;
+}
+
+.general-info{
+    margin-top: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+}
+.general-info-body-item,.general-info-title{
+    padding:2rem 0; 
+    font-size: 1.5rem;
+}

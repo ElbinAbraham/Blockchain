@@ -1,0 +1,73 @@
+.LoginContainer{
+    width: 60rem;
+    height: 40rem;
+    background-color: #D5F7E7;
+    margin: 5rem 5rem 3rem 20rem;
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+}
+
+.ImageContainer{
+    width: 50%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.LoginBox{
+    padding: 10rem 5rem 5rem 7rem;
+}
+
+.LoginContainer .LoginBox .LoginBoxHeader h1{
+    margin:0 0 0 0;
+    font-size: 5rem !important; 
+    font-weight: bold;
+    color: #393939;
+}
+
+.LoginContainer .LoginBox .LoginSelector{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1rem 2rem 0rem 1rem;
+}
+
+.LoginContainer .LoginBox .LoginSelector .DoctorHeader,.UserHeader{
+    font-size: 16px;
+    color: #393939;
+    padding: 1rem;
+    margin:3px 3px 3px -1rem;
+}
+
+
+.LoginContainer .LoginBox .LoginSelector .DoctorHeader:hover, .UserHeader:hover{
+    color: #020202;
+    cursor: pointer;
+    border:#525c61 2px groove;
+    padding:1rem;
+    border-radius: 5px;
+}
+
+
+.LoginForm{
+    padding: 1rem 2rem 2rem 1rem;  
+}
+
+.Username, .Password{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0rem 0 1rem 0;  
+}
+
+#username, #password{
+    color:black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.Doctor{
+    padding: 3rem 0 0 0;
+    width: 97%;
+    height: 87%;
+}

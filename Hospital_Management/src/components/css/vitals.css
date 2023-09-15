@@ -1,0 +1,50 @@
+.container{
+    margin-top: 0rem;
+    width: 21rem;
+    /* margin-bottom: 20px; */
+    margin-left: 22rem;
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ce0000;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+
+.container-title{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.grid-container{
+    display: grid;
+    width: 20rem;
+    height: 14rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 10px;
+    padding: 1rem;
+
+}
+
+.blood,.Temp,.RR,.Heart{
+    background-color: white;
+    margin-left: -20px;
+    width: 8rem;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+.title{
+    font-weight: 600;
+}
+.details{
+    padding-bottom: 5px;
+}

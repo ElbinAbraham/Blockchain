@@ -1,0 +1,18 @@
+.current-container{
+    width: 21rem;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-left: 22rem;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 5px 5px #888888;
+    overflow-y: scroll;
+}
+
+.current-title{
+    font-size: 16px;
+}
