@@ -1,8 +1,35 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import "../css/Login_Users.css";
 import doctor from "@images/doctor.jpg";
+import contract from "../../contracts/Login.json";
+import { ethers } from "ethers";
+
+
+const alchemyProvider = new ethers.providers.JsonRpcProvider(API_URL);
+const signer = new ethers.Wallet(PRIVATE_KEY, alchemyProvider);
+const demoContract = new ethers.Contract(
+  CONTRACT_ADDRESS,
+  contract.abi,
+  signer
+);
 
 const Login_Users = () => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleLogin = async (event) => {
+    event.preventDefault();
+
+    try {
+      console.log(username);
+      console.log(password);
+      const transaction = await demoContract.login(username, password);
+      console.log("Login successful!");
+    } catch (error) {
+      console.error("Error logging in:");
+    }
+  };
+
   return (
     <>
       <div className="LoginContainer">
@@ -29,6 +56,7 @@ const Login_Users = () => {
                       type="text"
                       id="username"
                       placeholder="Enter Username"
+                      onChange={(e) => setUsername(e.target.value)}
                     ></input>
                   </div>
                 </div>
@@ -38,9 +66,12 @@ const Login_Users = () => {
                     type="password"
                     id="password"
                     placeholder="Enter Password"
+                    onChange={(e) => setPassword(e.target.value)}
                   ></input>
                 </div>
-                <button type="submit">Login</button>
+                <button type="submit" onClick={handleLogin}>
+                  Login
+                </button>
               </form>
             </div>
           </div>

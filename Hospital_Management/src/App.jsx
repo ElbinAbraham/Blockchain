@@ -44,16 +44,16 @@ function App() {
   ];
   return (
     <>
-    {/* <body>
+    <body>
     <div className="bg-image">
     <Login_Users />
     </div>
-    </body> */}
+    </body>
     
-    <Sidebar />
+    {/* <Sidebar />
     <Vitals />
     <Current medications={medications}/>
-    <GoogleCalendar src={calendarSrc} width="800" height="600" />
+    <GoogleCalendar src={calendarSrc} width="800" height="600" /> */}
     </>
   )
 }
