@@ -1,7 +1,7 @@
 import React from "react";
-import Vitals from './components/js/vitals';
-import Sidebar from './components/js/sidebar';
-import Current from './components/js/current';
+import Vitals from '../js/vitals';
+import Sidebar from '../js/sidebar';
+import Current from '../js/current';
 
 const DashboardUser = () => {
     const medications = [

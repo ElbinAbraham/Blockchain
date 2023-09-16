@@ -14,35 +14,35 @@ import GoogleCalendar from "./components/js/bookings";
 // import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
-  const calendarSrc =
-    "https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&src=...";
-  const medications = [
-    {
-      name: "Medication A",
-      startDate: "2023-09-10", // Start date in yyyy-mm-dd format
-      duration: 7, // Duration in days
-    },
-    {
-      name: "Medication B",
-      startDate: "2023-09-15", // Start date in yyyy-mm-dd format
-      duration: 3, // Duration in days
-    },
-    {
-      name: "Medication C",
-      startDate: "2023-09-05", // Start date in yyyy-mm-dd format
-      duration: 2, // Duration in days
-    },
-    {
-      name: "Medication B",
-      startDate: "2023-09-15", // Start date in yyyy-mm-dd format
-      duration: 3, // Duration in days
-    },
-    {
-      name: "Medication B",
-      startDate: "2023-09-15", // Start date in yyyy-mm-dd format
-      duration: 3, // Duration in days
-    },
-  ];
+  // const calendarSrc =
+  //   "https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FKolkata&src=...";
+  // const medications = [
+  //   {
+  //     name: "Medication A",
+  //     startDate: "2023-09-10", // Start date in yyyy-mm-dd format
+  //     duration: 7, // Duration in days
+  //   },
+  //   {
+  //     name: "Medication B",
+  //     startDate: "2023-09-15", // Start date in yyyy-mm-dd format
+  //     duration: 3, // Duration in days
+  //   },
+  //   {
+  //     name: "Medication C",
+  //     startDate: "2023-09-05", // Start date in yyyy-mm-dd format
+  //     duration: 2, // Duration in days
+  //   },
+  //   {
+  //     name: "Medication B",
+  //     startDate: "2023-09-15", // Start date in yyyy-mm-dd format
+  //     duration: 3, // Duration in days
+  //   },
+  //   {
+  //     name: "Medication B",
+  //     startDate: "2023-09-15", // Start date in yyyy-mm-dd format
+  //     duration: 3, // Duration in days
+  //   },
+  // ];
   return (
     <>
       {/* <Login_Users /> */}
@@ -50,12 +50,9 @@ function App() {
       <Routes>
         <Route exact path="/" element={ <Login_Users /> } />
         <Route path="/other" element={<Patient_Data_Form />} />
+        <Route path="/dashboard" element={<DashboardUser />} />
       </Routes>
     </Router>
-      {/* <Sidebar />
-    <Vitals />
-    <Current medications={medications}/>
-    <GoogleCalendar src={calendarSrc} width="800" height="600" /> */}
     </>
   );
 }
