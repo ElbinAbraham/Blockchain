@@ -1,0 +1,13 @@
+.form-label{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.submitButton{
+    align-items: flex-end;
+}
+.mainContainer{
+    width:90rem;
+    margin: 2rem;
+    min-height: 50rem;
+}
