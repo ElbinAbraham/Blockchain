@@ -5,15 +5,8 @@ import contract from "../../contracts/Login.json";
 import { ethers } from "ethers";
 
 
-const alchemyProvider = new ethers.providers.JsonRpcProvider(API_URL);
-const signer = new ethers.Wallet(PRIVATE_KEY, alchemyProvider);
-const demoContract = new ethers.Contract(
-  CONTRACT_ADDRESS,
-  contract.abi,
-  signer
-);
 
-const Login_Users = () => {
+const Login_Users = () => {   
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
